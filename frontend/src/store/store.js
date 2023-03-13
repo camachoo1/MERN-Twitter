@@ -5,8 +5,13 @@ import {
   compose,
 } from 'redux';
 import thunk from 'redux-thunk';
+import sessionReducer from './session';
+import { sessionErrorsReducer } from './session';
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({
+  session: sessionReducer,
+  sessionErrors: sessionErrorsReducer,
+});
 
 let enhancer;
 
