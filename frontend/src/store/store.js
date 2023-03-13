@@ -6,11 +6,13 @@ import {
 } from 'redux';
 import thunk from 'redux-thunk';
 import sessionReducer from './session';
-import { sessionErrorsReducer } from './session';
+import tweetsReducer from './tweets';
+import errorsReducer from './errors';
 
 const rootReducer = combineReducers({
   session: sessionReducer,
-  sessionErrors: sessionErrorsReducer,
+  tweets: tweetsReducer,
+  errors: errorsReducer,
 });
 
 let enhancer;
