@@ -8,7 +8,6 @@ const { faker } = require('@faker-js/faker');
 const NUM_SEED_USERS = 10;
 const NUM_SEED_TWEETS = 30;
 
-// Create users
 const users = [];
 
 users.push(
