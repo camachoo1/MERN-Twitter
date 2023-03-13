@@ -17,7 +17,7 @@ import TweetCompose from './components/Tweets/TweetCompose';
 
 import { getCurrentUser } from './store/session';
 
-function App() {
+const App = () => {
   const [loaded, setLoaded] = useState(false);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -44,6 +44,6 @@ function App() {
       </>
     )
   );
-}
+};
 
 export default App;
